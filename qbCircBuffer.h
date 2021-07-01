@@ -18,11 +18,11 @@ extern "C" {
 //const char* CIRCBUFFER_RC_STRING[] = { "OK", "Unknwown error", "Buffer overflow", "Memory allocation failed" , "Mutex initialization failed" , "Buffer closed" };
 extern char* QBCIRCBUFFER_RC_STRING[];
 
-#define CIRCBUFFER_LOG_PREFIX_MAX_SIZE 1024
+#define QBCIRCBUFFER_LOG_PREFIX_MAX_SIZE 1024
 
 typedef struct qbCircBuffer_ {
         long buffer_size;
-	char log_prefix[CIRCBUFFER_LOG_PREFIX_MAX_SIZE];
+	char log_prefix[QBCIRCBUFFER_LOG_PREFIX_MAX_SIZE];
         char *buffer;
         char *storage_pointer;
         char *reading_pointer;
